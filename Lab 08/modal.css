@@ -1,0 +1,50 @@
+.radioinput fieldset {
+	border						: none;
+}
+
+/* Use CSS to style the link as a button */
+.button {
+	border           				:1px solid black;
+	border-radius    			:6px;
+	background-color 		:lightgrey;
+	padding          				:0.25em; 				/* Creates spacing around the text */
+}
+
+.button:hover {
+	background-color 		:darkgrey;
+}
+
+/* Use CSS to style the window */
+
+.window {														/* apply style to HTML elements having a tooltip as class name */
+	display						: none;					/* window is initially not visible */
+	z-index						: 2;						/* place window on top */
+	position						: fixed;					/* place window on a fixed location  */
+
+	top								: 50%;					/* place the top left corner of the window at  */
+	left								: 50%;					/* the centre of the screen */
+	margin-top					: -5em;					/* adjust the windows by movin it up */ 
+	margin-left					: -11em;      			/* then moving it to the left to the centre of the window */
+	
+	background-color		: lightblue;			/* uses a lightblue background */
+	border-radius				: 5px;					/* create a rounded corner */
+	padding						: 5px;					/* add a 5px spacing around the text */
+	width             				: 22em;
+	height							: 10em;
+
+}
+
+/* set up a transparent pane on the screen, preventing the user from clicking on any elements at layer 0 on the screen */
+#scrnOverlay {
+	visibility						: hidden;
+	z-index						: 1;						/* use layer 1 to overlay everything in layer 0 */
+	
+	position 						: fixed;					/* Block out the whole screen */
+	top								: 0;
+	bottom							: 0;
+	left								: 0;
+	right								: 0;
+
+	background-color		: grey;
+	opacity						: 0.5;
+}

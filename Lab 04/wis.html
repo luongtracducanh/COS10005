@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Programming your own Wireless Information Service</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Web Development" />
+  <meta name="keywords"    content="HTML (Part 2 Structure) and CSS" />
+  <meta name="author"      content="put your name here" />
+</head>
+<link href="style.css" rel="stylesheet">
+<body>
+<header>Mobile World</header>
+<nav>
+<a>Home</a>
+<a>WIS</a>
+<a>About</a>
+</nav>
+<main>
+<h3>Programming your own Wireless Information Service (WIS)</h3>
+<p>5 February 2005</p>
+<aside>Upon completion of the SMS system library, various database inquiry system can be developed. This can be a dictionary, horoscope, or registration system. The possiblities are endless</aside>
+<!-- Section 1 -->
+<article>
+<section>
+<h3>Introduction</h3>
+<p>Sending and receiving text messages has become part of our daily activities. Can you imagine yourselves without a mobile phone for a day? Would you leave home without it? And would you be wondering how those mobile applications are written, were you can send a text message to a specified number, and you get the necessary information needed in a form of a reply, or simply registering your name for a contest?</p>
+<p>This article discusses the things you need to know in order to program your own wireless information service. In validating the concept, a sample program was created using Sun Microsystems's Java[tm] 2 Standard Edition (J2SE[tm]) and Java Communication API. The application developed had been tested on a PC equipped with an infrared dongle that connects to an infrared enabled phone, in this case a Nokia 8310.  The application is divided into two parts, the messaging library and the information service application.</p>
+</section>
+<!-- Section 2 -->
+<section>
+<h3>Understanding the SMS Message</h3>
+<p>Before developing the application, let us take a look at how a message is handled by the mobile phone. A Short Messaging Service or SMS text can be up to 160 characters long. Each character of the message is represented using 7 bits instead of 8. 8-bit messages with a maximum of 140 characters are usually not viewable as text messages. This is normally used for ringtones and images. Unicode (UCS2) text messages, which are used for Asian languages, are 16-bit messages. This type of messages has a maximum length of 70 characters. Blinking SMS is also represented as a 16-bit message otherwise known as Flash SMS.</p>
+</section>
+</article>
+</main>
+<footer>Copy right 2005-2013</footer>
+</body>
+</html>

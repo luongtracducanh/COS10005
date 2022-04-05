@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Registration Form" />
+	<meta name="author"      content="put your name here" />
+	<!-- (1) --><link href="regform2_desktop.css" rel="stylesheet" type="text/css" />
+	<!-- (2) --><script src="Lab9_validation.js"></script>
+	<title>Web Development Modal Demo</title>
+</head>
+<body>
+	<!-- (3) --><form id="regform" method="post"
+					action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+		<fieldset>
+			<legend>Account Information</legend>
+			<div class="textinput">
+				<label for="sid">User ID</label>
+				<input id="sid" type="text" name="id" />
+			</div>
+			<div class="textinput">
+				<label for="pwd1">Password</label>
+				<input id="pwd1" type="password" name="pwd1" />
+			</div>
+			<div class="textinput">
+				<label for="pwd2">Retype Password</label>
+				<input id="pwd2" type="password" name="pwd2" />
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>User Information</legend>
+			<div class="textinput">
+				<label for="uname">Name</label>
+				<input id="uname" type="text" name="uname" />
+			</div>
+			<div class="radioinput">
+				<fieldset>
+					<legend>Gender</legend>
+					<input id="genm" type="radio" name="gender" value="M" />
+					<label for="genm">Male</label>
+					<input id="genf" type="radio" name="gender" value="F" />
+					<label for="genf">Female</label>
+				</fieldset>
+			</div>
+		</fieldset>
+		<div class="buttoninput">
+			<input type="submit" value="Test Register" />
+		</div>
+	</form>
+</body>
+</html>

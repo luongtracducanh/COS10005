@@ -179,7 +179,7 @@ function validateForm(){
     if (name.length < 2) {
         errMsg += "Name must be at least two characters long.\n";
     }
-    if (email.indexOf("@") == -1) {
+    if (email.indexOf("@") < 1) {
         errMsg += "Email contains at least one @ symbol.\n";
     }
     if (errMsg != "") {

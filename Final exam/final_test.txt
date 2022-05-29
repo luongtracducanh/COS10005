@@ -27,7 +27,7 @@ i) article
 j) footer
 
 2. 
-#image { /* select the element with the id "image" */
+#image {                        /* select the element with the id "image" */
     float:          left;       /* float the image to the left */
     width:          35%;        /* set the width to 35% */
     padding:        10px 10px;  /* top and right padding = 10px */
@@ -80,27 +80,24 @@ b) x | i
 
 5.
 a)
-function changetext()
-    {
+function changetext() {
     var mainItem = document.getElementById("main");
     mainItem.innerHTML = "This is a new paragraph of text.";
-    }
+}
 window.onload = changetext;
 
 b) 
-function changecolor()
-    {
+function changecolor() {
         var mainItem = document.getElementById("main");
         mainItem.Style.color = "green";
-    }
+}
 window.onload = changecolor;
 
 c)
-function hide() 
-    {
+function hide() {
         var Item = document.getElementByID("main");
         mainItem.Style.display = "none";
-    }
+}
 window.onload = hide;
 
 Part E: Short Code Questions
@@ -165,7 +162,7 @@ a)
 
 b)
 index.js
-function validateForm(){
+function validateForm() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var errMsg = "";

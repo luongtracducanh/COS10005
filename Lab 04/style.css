@@ -1,50 +1,60 @@
 @charset "utf-8";
+
 /* CSS Document */
 main {
-		overflow:auto;
-		}
-		nav {
-		height:1em;
-		line-height:1em;
-		margin:20px 0px;
-		}
-		header, nav {
-		border-style:dotted;
-		}
-		article {
-		float:left;
-		width:75%;
-		border-style:dotted;
-		}
-		aside{
-		float:right;
-		width:20%;
-		border-style:dotted;
-		}
-		footer {
-		clear:both;
-		border-style:dotted;
-		margin-top: 20px;
-		}
+	overflow: auto;
+}
+
+nav {
+	height: 1em;
+	line-height: 1em;
+	margin: 20px 0px;
+}
+
+header,
+nav {
+	border-style: dotted;
+}
+
+article {
+	float: left;
+	width: 75%;
+	border-style: dotted;
+}
+
+aside {
+	float: right;
+	width: 20%;
+	border-style: dotted;
+}
+
+footer {
+	clear: both;
+	border-style: dotted;
+	margin-top: 20px;
+}
 
 ul {
-		float:left;
-		width:100%;
-		padding:0;
-		margin:0;
-		list-style-type:none;
-		}
-		a {
-		float:left;
-		width:6em;
-		text-decoration:none;
-		color:white;
-		background-color:blue;
-		border-right: 1px solid white;
-		}
-		a:hover {
-		background-color: #2288ff;
-		}
-		header h1 {
-		text-align:center;
-		}
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	float: left;
+	width: 6em;
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	border-right: 1px solid white;
+}
+
+a:hover {
+	background-color: #2288ff;
+}
+
+header h1 {
+	text-align: center;
+}

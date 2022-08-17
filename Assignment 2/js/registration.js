@@ -11,15 +11,16 @@ function validate() {
 	var taco1 = document.getElementById("taco1").checked;
 	var taco2 = document.getElementById("taco2").checked;
 	var taco3 = document.getElementById("taco3").checked;
-	var errMsg = "";								
-	var result = true;							
-	var pattern = /^[a-zA-Z ]+$/;		
+	var errMsg = "";
+	var result = true;
+	var pattern = /^[a-zA-Z ]+$/;
+
 	if (uname == "") {
 		errMsg += "Username cannot be empty.\n";
 	}
-	if (pwd1.length<8) { 
+	if (pwd1.length < 8) {
 		errMsg += "Password has to be at least 8 characters long.\n";
-		}
+	}
 	if (pwd2 == "") {
 		errMsg += "Retype Password cannot be empty.\n";
 	}
@@ -29,29 +30,31 @@ function validate() {
 	if (email == "") {
 		errMsg += "Email cannot be empty.\n";
 	}
-	if (! postcode.match (/^(?=.*\d).{4}$/)) { 
+	if (!postcode.match(/^(?=.*\d).{4}$/)) {
 		errMsg += "Postcode has to be 4-digit.\n";
-		}
+	}
 	if (name == "") {
 		errMsg += "Client's name cannot be empty.\n";
 	}
-	if (! name.match (pattern)) {
+	if (!name.match(pattern)) {
 		errMsg += "Client's name contains symbols.\n";
 	}
-	if ((genm == "")&&(genf == "")) {
+	if ((genm == "") && (genf == "")) {
 		errMsg += "A gender must be selected.\n";
 	}
-	if ((taco1 == "")&&(taco2 == "")&&(taco3 == "")) {
+	if ((taco1 == "") && (taco2 == "") && (taco3 == "")) {
 		errMsg += "You have to choose at least 1 type of taco.\n";
-		}
+	}
 	if (errMsg != "") {
-		alert (errMsg);
+		alert(errMsg);
 		result = false;
-	} 
+	}
 	return result;
 }
-function init () {
-	var regForm = 	document.getElementById("regform");
+
+function init() {
+	var regForm = document.getElementById("regform");
 	regForm.onsubmit = validate;
 }
+
 window.onload = init;

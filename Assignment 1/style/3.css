@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* CSS Document */
 #typing {
 	width: 0ch;
@@ -7,178 +8,207 @@
 	font-weight: bold;
 	overflow: hidden;
 	white-space: nowrap;
-	animation: typing 5s steps(40) 1s infinite alternate; 
+	animation: typing 5s steps(40) 1s infinite alternate;
 }
+
 @keyframes typing {
-from {
-	width: 0ch;
+	from {
+		width: 0ch;
+	}
+
+	to {
+		width: 50ch;
+	}
 }
-to {
-	width: 50ch;
-}
-}
+
 img {
-  animation-duration: 4s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
+	animation-duration: 4s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
 }
+
 @keyframes slidein {
-  from {
-    margin-left: 0%;
-    width: 0%;
-  }
-  to {
-    margin-left: 0%;
-    width: 20%;
-  }
+	from {
+		margin-left: 0%;
+		width: 0%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 20%;
+	}
 }
+
 @media screen and (min-width: 1024px) {
-nav{
-	float:left ;
-	list-style-type: none;
-	padding: 0;
-	margin-bottom: 10px;
-	width: 100%;
-	background-color: darkgray;
-	border-style: solid;
-	border-color: darkgray;
+	nav {
+		float: left;
+		list-style-type: none;
+		padding: 0;
+		margin-bottom: 10px;
+		width: 100%;
+		background-color: darkgray;
+		border-style: solid;
+		border-color: darkgray;
+	}
+
+	a {
+		float: left;
+		text-decoration: none;
+		color: white;
+		background-color: blue;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		border: solid;
+		border-width: 1px;
+		border-color: white;
+	}
+
+	a:hover {
+		background-color: orange;
+	}
+
+	h1 {
+		color: white;
+		background-color: olive;
+	}
+
+	img {
+		width: 20%;
+		padding: 10px;
+		margin-left: 5%;
+		float: right;
+	}
+
+	main {
+		height: 330px;
+		margin: 10px;
+		float: left;
+		background-color: lightcyan;
+		padding: 10px;
+		width: 70%;
+		border-style: solid;
+
+
+	}
+
+	p {
+		float: left;
+		width: 60%;
+		padding: 10px;
+		background-color: antiquewhite;
+		border-style: groove;
+		border-color: aliceblue;
+		margin: 10px;
+		box-shadow: 3px 3px 3px 2px #797979;
+	}
+
+	table {
+		margin: 10px;
+		width: 70%;
+		height: 100px;
+		background-color: lightblue;
+	}
+
+	h4 {
+		color: darkblue;
+	}
+
+	footer {
+		color: white;
+		background-color: darkslateblue;
+		float: left;
+		font-style: italic;
+		margin-top: 10px;
+		width: 100%;
+	}
 }
-a{
-	float: left;
-	text-decoration: none;
-	color: white;
-	background-color: blue;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
-	padding-left: 0.6em;
-	padding-right: 0.6em;
-	border: solid;
-	border-width: 1px;
-	border-color: white;
-}
-a:hover {
-	background-color: orange;
-}
-h1{
-	color: white;
-	background-color: olive;
-}
-img {
-	width: 20%;
-	padding: 10px;	
-	margin-left: 5%;
-	float: right;
-}
-main {
-	height: 330px;
-	margin: 10px;
-	float: left;
-	background-color: lightcyan;
-	padding: 10px;
-	width: 70%;
-	border-style: solid;
-	
-	
-}
-p {
-	float: left;
-	width: 60%;
-	padding : 10px;
-	background-color: antiquewhite;
-	border-style: groove;
-	border-color: aliceblue;
-	margin: 10px;
-	box-shadow: 3px 3px 3px 2px #797979;
-}
-table {
-	margin: 10px;
-	width: 70%;
-	height: 100px;
-	background-color: lightblue;
-}
-h4 {
-	color: darkblue;
-}
-footer {
-	color: white;
-	background-color: darkslateblue;
-	float: left;
-	font-style: italic;
-	margin-top: 10px;
-	width: 100%;
-}
-}
+
 @media screen and (max-width: 1023px) {
-nav{
-	float:left ;
-	list-style-type: none;
-	padding: 0;
-	margin-bottom: 10px;
-	width: 100%;
-	background-color: darkgray;
-	border-style: solid;
-	border-color: darkgray;
-}
-a{
-	float: left;
-	text-decoration: none;
-	color: white;
-	background-color: blue;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
-	padding-left: 0.6em;
-	padding-right: 0.6em;
-	border: solid;
-	border-width: 1px;
-	border-color: white;
-}
-a:hover {
-	background-color: orange;
-}
-h1{
-	color: white;
-	background-color: olive;
-}
-img {
-	float: left;
-	width: 40%;
-	padding-right: 10px;	
-	margin-right: 5%;
-	margin-top: 15px;
-}	/* fit the image bellow the text box */
-main {
-	margin: 10px;	
-	background-color:lightcyan;
-	float: left;
-	padding: 10px;
-	border-style: solid;
-}
-p {
-	float: left;
-	width: 94%;
-	border-style: solid;
-	padding : 10px;
-	background-color: antiquewhite;
-}
-table {
-	margin: auto;
-	width: 70%;
-	height: 100px;
-	background-color: lightblue;
-}	/* center the table to the webpage */
-h4 {
-	color: darkblue;
-}
-footer {
-	color: white;
-	background-color: darkslateblue;
-	float: left;
-	font-style: italic;
-	margin-top: 10px;
-	width: 100%;
-}
-body {
-	font-size: 120%;	/* Increase text font size on a phone browser */
-}
+	nav {
+		float: left;
+		list-style-type: none;
+		padding: 0;
+		margin-bottom: 10px;
+		width: 100%;
+		background-color: darkgray;
+		border-style: solid;
+		border-color: darkgray;
+	}
+
+	a {
+		float: left;
+		text-decoration: none;
+		color: white;
+		background-color: blue;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		border: solid;
+		border-width: 1px;
+		border-color: white;
+	}
+
+	a:hover {
+		background-color: orange;
+	}
+
+	h1 {
+		color: white;
+		background-color: olive;
+	}
+
+	img {
+		float: left;
+		width: 40%;
+		padding-right: 10px;
+		margin-right: 5%;
+		margin-top: 15px;
+	}
+
+	/* fit the image bellow the text box */
+	main {
+		margin: 10px;
+		background-color: lightcyan;
+		float: left;
+		padding: 10px;
+		border-style: solid;
+	}
+
+	p {
+		float: left;
+		width: 94%;
+		border-style: solid;
+		padding: 10px;
+		background-color: antiquewhite;
+	}
+
+	table {
+		margin: auto;
+		width: 70%;
+		height: 100px;
+		background-color: lightblue;
+	}
+
+	/* center the table to the webpage */
+	h4 {
+		color: darkblue;
+	}
+
+	footer {
+		color: white;
+		background-color: darkslateblue;
+		float: left;
+		font-style: italic;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	body {
+		font-size: 120%;
+		/* Increase text font size on a phone browser */
+	}
 }

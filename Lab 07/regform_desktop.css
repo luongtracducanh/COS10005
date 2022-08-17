@@ -1,58 +1,78 @@
-
 /* Style the form to a fixed width so the form looks the same
 	 even if the browser window is resize
 	 comment out this style to see the difference 			 
 */
 form {
-	width: 40em;								/* set the width to 40em */
+	width: 40em;
+	/* set the width to 40em */
 }
 
 /* Style the labels and input by aligning all input fields 
 */
 label {
-	float: left;								/* float to left */
-	text-align: right;						/* align text to right */
-	width: 10em;							/* set width to 10em */
-	margin-right: 1em;							/* set right margin to 1em */
+	float: left;
+	/* float to left */
+	text-align: right;
+	/* align text to right */
+	width: 10em;
+	/* set width to 10em */
+	margin-right: 1em;
+	/* set right margin to 1em */
 }
 
 input {
-	width: 50%;							/* set width to 50% */
+	width: 50%;
+	/* set width to 50% */
 }
 
 .textinput {
-	margin: 10px;							/* set margin to 10px */
+	margin: 10px;
+	/* set margin to 10px */
 }
 
 /* Style radio button input to a single line
 	 note that declarations are inherited 
 */
 .radioinput fieldset {
-    border: none;			/* remove borders */
+	border: none;
+	/* remove borders */
 }
+
 .radioinput legend {
-	float: left;							/* flat to left */
-	text-align: right;							/* align text to right */
-	width: 9em;							/* set width to 9em */
+	float: left;
+	/* flat to left */
+	text-align: right;
+	/* align text to right */
+	width: 9em;
+	/* set width to 9em */
 }
-.radioinput input  {
-	width: auto;							/* set width to auto*/
+
+.radioinput input {
+	width: auto;
+	/* set width to auto*/
 }
-.radioinput label  {
-	float: none;							/* disable float */
-	text-align: left;							/* align text to left */
+
+.radioinput label {
+	float: none;
+	/* disable float */
+	text-align: left;
+	/* align text to left */
 }
 
 /* Style  button input 
 	 note that declarations are inherited 
 */
 .buttoninput {
-	text-align: right;							/* align text to right */
+	text-align: right;
+	/* align text to right */
 }
+
 .buttoninput input {
-	width: auto;							/* set width to auto*/
+	width: auto;
+	/* set width to auto*/
 }
-input[type=text]:focus , input[type=password]:focus
-		{
-		background-color:yellow
-		}
+
+input[type=text]:focus,
+input[type=password]:focus {
+	background-color: yellow
+}
